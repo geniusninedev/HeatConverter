@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nineinfosys.heatconverter">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ActivitySetting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SearchActivity" />
+
+        //heat converter
+        <activity android:name=".ConverterActivity.FuelEfficiencyMassActivity">
+
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionFuelEfficiencyMassListActivity" />
+        <activity android:name=".ConverterActivity.FuelEfficiencyVolumeActivity">
+
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionFuelEfficiencyVolumeListActivity" />
+        <activity android:name=".ConverterActivity.TemperatureIntervalActivity">
+
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionTemperatureIntervalListActivity" />
+        <activity android:name=".ConverterActivity.ThermalExpansionActivity">
+
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionThermalExpansionListActivity" />
+        <activity android:name=".ConverterActivity.ThermalResistanceActivity">
+
+        </activity>
+        <activity android:name=".ConverterActivityList.ConversionThermalResistanceListActivity" />
+        <activity android:name=".ConverterActivity.ThermalConductivityActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionThermalConductivityListActivity" />
+        <activity android:name=".ConverterActivity.SpecificHeatCapacityActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionSpecificHeatCapacityListActivity" />
+        <activity android:name=".ConverterActivity.HeatDensityActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionHeatDensityListActivity" />
+        <activity android:name=".ConverterActivity.HeatFluxDensityActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionHeatFluxDensityListActivity" />
+        <activity android:name=".ConverterActivity.HeatTransferCoefficientActivity"/>
+
+        <activity android:name=".ConverterActivityList.ConversionHeatTransferCoefficientListActivity" />
+
+
+
+
+    </application>
+
+</manifest>
