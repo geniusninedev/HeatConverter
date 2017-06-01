@@ -31,6 +31,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nineinfosys.heatconverter.ConverterActivityList.ConversionHeatFluxDensityListActivity;
 import com.nineinfosys.heatconverter.Engin.HeatFluxDensityConverter;
 import com.nineinfosys.heatconverter.R;
@@ -83,7 +86,10 @@ public class HeatFluxDensityActivity extends AppCompatActivity implements View.O
 
         formatsetting();
 
-
+        MobileAds.initialize(HeatFluxDensityActivity.this, getString(R.string.ads_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adViewUnitConverter);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         //keyboard hidden first time

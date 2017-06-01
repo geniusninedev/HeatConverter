@@ -31,6 +31,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.nineinfosys.heatconverter.ConverterActivityList.ConversionFuelEfficiencyMassListActivity;
 import com.nineinfosys.heatconverter.Engin.FuelEfficiencyMassConverter;
 import com.nineinfosys.heatconverter.R;
@@ -77,7 +80,10 @@ public class FuelEfficiencyMassActivity extends AppCompatActivity implements Vie
         getSupportActionBar().setTitle("Fuel Efficiency Mass ");
 
         formatsetting();
-
+        MobileAds.initialize(FuelEfficiencyMassActivity.this, getString(R.string.ads_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adViewUnitConverter);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
 
