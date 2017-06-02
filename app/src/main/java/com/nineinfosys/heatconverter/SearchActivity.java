@@ -21,6 +21,7 @@ import com.nineinfosys.heatconverter.ConverterActivity.HeatFluxDensityActivity;
 import com.nineinfosys.heatconverter.ConverterActivity.HeatTransferCoefficientActivity;
 import com.nineinfosys.heatconverter.ConverterActivity.SpecificHeatCapacityActivity;
 import com.nineinfosys.heatconverter.ConverterActivity.TemperatureIntervalActivity;
+import com.nineinfosys.heatconverter.ConverterActivity.ThermalConductivityActivity;
 import com.nineinfosys.heatconverter.ConverterActivity.ThermalExpansionActivity;
 import com.nineinfosys.heatconverter.ConverterActivity.ThermalResistanceActivity;
 
@@ -375,10 +376,12 @@ public class SearchActivity extends AppCompatActivity implements TextWatcher {
     }
 
     private void thermalexpansion() {
+        Intent i7=new Intent(SearchActivity.this, ThermalExpansionActivity.class);
+        startActivity(i7);
     }
 
     private void thermalconducitivity() {
-        Intent i7=new Intent(SearchActivity.this, ThermalExpansionActivity.class);
+        Intent i7=new Intent(SearchActivity.this, ThermalConductivityActivity.class);
         startActivity(i7);
     }
 
