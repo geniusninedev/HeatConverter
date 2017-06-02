@@ -227,8 +227,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorTextBlack"
                     android:prompt="@string/spinner_title_from"
-                    style="@android:style/Widget.Holo.Light.Spinner"
-                    />
+                    style="@android:style/Widget.Holo.Light.Spinner" />
 
             </LinearLayout>
 

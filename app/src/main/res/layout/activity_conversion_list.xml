@@ -70,6 +70,7 @@
         android:id="@+id/recyclerViewConverterList"
         android:layout_width="fill_parent"
         android:layout_marginTop="10dp"
+        android:background="@color/colordialog"
         android:layout_marginBottom="50dp"
         android:layout_height="fill_parent">
     </android.support.v7.widget.RecyclerView>
