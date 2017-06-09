@@ -30,6 +30,7 @@ public class ActivitySetting extends AppCompatActivity {
         setContentView(R.layout.activity_setting);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Settings");
 
         radioButtonNumberFormatDecimal=(RadioButton)findViewById(R.id.RadioNumberFormatDecimal);
         radioButtonNumberFormatSeperator=(RadioButton)findViewById(R.id.RadioNumberFormatSeperator);
